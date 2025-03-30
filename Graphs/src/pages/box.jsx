@@ -55,7 +55,7 @@ function BoxPlots() {
 
         {/* Second Example */}
         <div className="graph-example">
-          <h3>Essential Workers in the United States</h3>
+          <h3> Salary Distribution in HR roles in Argentina </h3>
           <img
             src={ box2 }
             alt="Box plot showing salary distribution of HR roles in Argentina"
