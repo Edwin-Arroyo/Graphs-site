@@ -1,7 +1,7 @@
 import time from "../assets/time.png";
 import time1 from "../assets/time1.png";
 import time2 from "../assets/time2.png";
-function Histogram() {
+function Time() {
   return (
     <div className="graph-page">
       <h1>Time Series Graphs</h1>
@@ -158,4 +158,4 @@ function Histogram() {
   );
 }
 
-export default Histogram;
+export default Time;

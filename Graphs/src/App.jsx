@@ -6,6 +6,7 @@ import CircleGraphs from "./pages/circle";
 import Histogram from "./pages/histogram";
 import Pareto from "./pages/pareto";
 import Time from "./pages/time";
+import Ogive from "./pages/ogive";
 import "./App.css";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path="/histogram" element={<Histogram />} />
           <Route path="/pareto" element={<Pareto />} />
           <Route path="/time" element={<Time />} />
-          {/*<Route path="/ogive" element={<Ogive />} />*/}
+          <Route path="/ogive" element={<Ogive />} />
         </Routes>
       </main>
     </div>
