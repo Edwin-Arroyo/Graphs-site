@@ -1,22 +1,22 @@
-import pareto from "../assets/pareto.png";
-import pareto1 from "../assets/pareto1.png";
-import pareto2 from "../assets/pareto2.png";
+import time from "../assets/time.png";
+import time1 from "../assets/time1.png";
+import time2 from "../assets/time2.png";
 function Histogram() {
   return (
     <div className="graph-page">
-      <h1>Pareto charts</h1>
+      <h1>Time Series Graphs</h1>
 
       {/* Introduction to circle graphs */}
       <section className="intro">
         <div className="intro-content">
           <div className="intro-image">
-            <img src={pareto} alt="Histogram example" />
+            <img src={time} alt="Histogram example" />
           </div>
           <div className="intro-text">
             <p>
-            A Pareto chart is a type of chart that contains both bars and a line graph, 
-            where individual values are represented in descending order by bars, and the 
-            cumulative total is represented by the line.
+            A time series graph, also known as a time series chart or plot, is a data visualization tool 
+            that shows data points at successive intervals of time, with each point representing both a 
+            time and a quantity being measured, used to identify trends and patterns. 
             </p>
           </div>
         </div>
@@ -25,80 +25,73 @@ function Histogram() {
       <div className="graph-examples">
         {/* First Example  */}
         <div className="graph-example wide-example">
-          <h3> Categories of newsprint waste </h3>
-          <div className="image-container">
+          <h3> Job hunting </h3>
             <img
-              src={pareto1}
-              alt="Pareto chart showing the categories of newsprint waste in 2020"
+              src={time1}
+              alt="Time series graph showing job applications from federal workers at DOGE-targeted agencies"
             />
-          </div>
+          
           <p>
-            This pareto chart shows the categories of newsprint waste in the year 2020.
+            This time series graph shows the number of job applications from federal workers at DOGE-targeted agencies.
           </p>
           <p>
             {" "}
-            The data in this pareto chart was collected from IOP Conf. 
-            Series: Materials Science and Engineering 810 (2020) 012072.{" "}
+            The data in this time series graph comes from Indeed.{" "}
           </p>
           <p>The variables in this chart are: </p>
           <ul>
-            <li> categories of newsprint waste. </li>
+            <li> All federal workers. </li>
             <li>
               {" "}
-              amount of waste in Kilograms. {" "}
+              DOGE targets. {" "}
             </li>
             <li>
               {" "}
-              The percentage of waste coming from each category.{" "}
+              The percentage of job applications.{" "}
             </li>
           </ul>
           <p> Some general conclusions:</p>
           <ul>
             <li>
               {" "}
-              The category that contributed the most to newsprint waste was print waste.{" "}
+              The number of application went up for all federal workers.{" "}
             </li>
             <li>
               {" "}
-              The category that contributes teh least to newsprint waste was the 'others' category.{" "}
+              The spike happened shortly after President Trump's inauguration.{" "}
             </li>
           </ul>
         </div>
 
         {/* Second Example */}
         <div className="graph-example">
-          <h3> College athlete earnings </h3>
+          <h3> Change in population </h3>
           <img
-            src={pareto2}
-            alt="Pareto chart showing the average earnings of college athletes in non-revenue sports"
+            src={time2}
+            alt="Time series graph showing the change in population in the US"
           />
           <p>
-            This pareto chart shows the average college athlete earnings in non-revenue sports.
+            This time series graph shows the change in population in the US.
           </p>
           <p>
-          The data in this pareto chart comes from
-          Opendorse. Data is based on N.I.L. transactions disclosed through 
-          or processed by Opendorse between July 1, 2021, and June 30, 2024.
+          The data in this time series graph comes from
+          the US Census Bureau.
           </p>
           <p>The variables in this chart are: </p>
           <ul>
-            <li> The different non-revenue sports </li>
-            <li> if the sport is a mens or women's sport </li>
-            <li> the average earnings of the athletes in the sport </li>
+            <li> The different years </li>
+            <li> the change in population </li>
+            <li> category of change </li>
           </ul>
           <p> General conclusions:</p>
           <ul>
             <li>
               {" "}
-              Men's golf earned the most of all non-revenue sports.{" "}
+              From 2011 to 2021 the change in population has been negative.{" "}
             </li>
             <li>
                 {" "}
-                Exposure of the sport in the olympics can increase the earnings of the athletes.{" "}
-            </li>
-            <li>
-                {" "}
-                In general the more popular sports earn more.{" "}
+                Throughout most of the decade, natural increase was higher than immigration.{" "}
             </li>
           </ul>
         </div>
@@ -122,7 +115,7 @@ function Histogram() {
         }
 
         .intro-image {
-          flex: 0 0 40%;
+          flex: 0 0 40%; 
         }
 
         .intro-image img {
@@ -159,20 +152,6 @@ function Histogram() {
 
         .graph-example p {
           line-height: 1.6;
-        }
-
-        .wide-example {
-          width: 100%;
-          max-width: 1400px;
-          margin: 0 auto;
-        }
-
-        .image-container {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
         }
       `}</style>
     </div>

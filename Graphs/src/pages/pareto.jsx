@@ -1,7 +1,7 @@
 import pareto from "../assets/pareto.png";
 import pareto1 from "../assets/pareto1.png";
 import pareto2 from "../assets/pareto2.png";
-function Histogram() {
+function Pareto() {
   return (
     <div className="graph-page">
       <h1>Pareto charts</h1>
@@ -26,12 +26,12 @@ function Histogram() {
         {/* First Example  */}
         <div className="graph-example wide-example">
           <h3> Categories of newsprint waste </h3>
-          <div className="image-container">
+         
             <img
               src={pareto1}
               alt="Pareto chart showing the categories of newsprint waste in 2020"
             />
-          </div>
+         
           <p>
             This pareto chart shows the categories of newsprint waste in the year 2020.
           </p>
@@ -122,7 +122,7 @@ function Histogram() {
         }
 
         .intro-image {
-          flex: 0 0 40%;
+          flex: 0 0 40%; 
         }
 
         .intro-image img {
@@ -160,23 +160,9 @@ function Histogram() {
         .graph-example p {
           line-height: 1.6;
         }
-
-        .wide-example {
-          width: 100%;
-          max-width: 1400px;
-          margin: 0 auto;
-        }
-
-        .image-container {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        }
       `}</style>
     </div>
   );
 }
 
-export default Histogram;
+export default Pareto;

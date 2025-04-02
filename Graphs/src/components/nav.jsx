@@ -46,6 +46,12 @@ function Nav() {
           >
             Pareto Charts
           </Link>
+          <Link 
+            to="/time" 
+            className={location.pathname === '/time' ? 'active' : ''}
+          >
+            Time Series Graphs
+          </Link>
         </div>
       </div>
 

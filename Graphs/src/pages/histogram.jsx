@@ -26,12 +26,12 @@ function Histogram() {
         {/* First Example  */}
         <div className="graph-example wide-example">
           <h3> Age of first time mothers in 2016 </h3>
-          <div className="image-container">
+          
             <img
               src={Histo1}
               alt="Histogram showing the age of first time mothers in 2016"
             />
-          </div>
+          
           <p>
             This histogram shown the age of first time mother in the year 2016.
           </p>
@@ -115,7 +115,7 @@ function Histogram() {
         }
 
         .intro-image {
-          flex: 0 0 40%;
+          flex: 0 0 40%; 
         }
 
         .intro-image img {
@@ -152,20 +152,6 @@ function Histogram() {
 
         .graph-example p {
           line-height: 1.6;
-        }
-
-        .wide-example {
-          width: 100%;
-          max-width: 1400px;
-          margin: 0 auto;
-        }
-
-        .image-container {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
         }
       `}</style>
     </div>
