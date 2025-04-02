@@ -6,9 +6,6 @@ function Nav() {
   return (
     <nav className="navbar">
       <div className="nav-content">
-        <Link to="/" className="nav-logo">
-          Graph Examples
-        </Link>
         <div className="nav-links">
           <Link 
             to="/bar" 
@@ -51,6 +48,12 @@ function Nav() {
             className={location.pathname === '/time' ? 'active' : ''}
           >
             Time Series Graphs
+          </Link>
+          <Link 
+            to="/stemLeaf" 
+            className={location.pathname === '/stemLeaf' ? 'active' : ''}
+          >
+            Stem and Leaf
           </Link>
         </div>
       </div>

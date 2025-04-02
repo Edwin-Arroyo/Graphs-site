@@ -1,6 +1,5 @@
 import ogive from "../assets/ogive.png";
 import ogive1 from "../assets/ogive1.png";
-import time2 from "../assets/time2.png";
 function Ogive() {
   return (
     <div className="graph-page">
@@ -25,7 +24,7 @@ function Ogive() {
       <div className="graph-examples">
         {/* First Example  */}
         <div className="graph-example wide-example">
-          <h3> Job hunting </h3>
+          <h3> Behavioral reaction of retweets </h3>
             <img
               src={ogive1}
               alt="Ogive graph showing behavioral reaction of retweets"

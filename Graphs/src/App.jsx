@@ -7,6 +7,7 @@ import Histogram from "./pages/histogram";
 import Pareto from "./pages/pareto";
 import Time from "./pages/time";
 import Ogive from "./pages/ogive";
+import StemLeaf from "./pages/stemLeaf";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/pareto" element={<Pareto />} />
           <Route path="/time" element={<Time />} />
           <Route path="/ogive" element={<Ogive />} />
+          <Route path="/stemLeaf" element={<StemLeaf />} />
         </Routes>
       </main>
     </div>
