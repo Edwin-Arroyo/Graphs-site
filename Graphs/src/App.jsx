@@ -4,6 +4,7 @@ import BarCharts from "./pages/bar";
 import BoxPlots from "./pages/box";
 import CircleGraphs from "./pages/circle";
 import Histogram from "./pages/histogram";
+import Pareto from "./pages/pareto";
 import "./App.css";
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
           <Route path="/box" element={<BoxPlots />} />
           <Route path="/circle" element={<CircleGraphs />} />
           <Route path="/histogram" element={<Histogram />} />
-          {/*<Route path="/ogive" element={<Ogive />} />
-          <Route path="/pareto" element={<Pareto />} /> */}
+          <Route path="/pareto" element={<Pareto />} />
+          {/*<Route path="/ogive" element={<Ogive />} />*/}
         </Routes>
       </main>
     </div>
