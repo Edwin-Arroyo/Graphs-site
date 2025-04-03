@@ -3,7 +3,7 @@ import stl1 from "../assets/stl1.png";
 function StemLeaf() {
   return (
     <div className="graph-page">
-      <h1>Stem and Leaf Graphs</h1>
+      <h1>Stem and Leaf plot</h1>
 
       {/* Introduction to circle graphs */}
       <section className="intro">
